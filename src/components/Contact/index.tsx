@@ -15,7 +15,7 @@ const Contact = () => {
                 Get Your Risk Assessment
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Connect with our risk management experts to discuss your business needs. We'll provide tailored solutions for your Nigerian business.
+                Connect with our risk management experts to discuss your business needs. We&apos;ll provide tailored solutions for your Nigerian business.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const Hero = () => {
@@ -8,14 +8,14 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const phrases = [
+  const phrases = useMemo(() => [
     "Meet GOALs",
     "Manage Uncertainty", 
     "Document Processes",
     "Save Time",
     "Grow Sustainably",
     "Manage Reputation"
-  ];
+  ], []);
 
   const myRiskTeam = [
     {

@@ -21,7 +21,7 @@ const BlogSidebarPage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h1 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
-                  Navigating Regulatory Compliance in Nigeria's Financial Sector
+                  Navigating Regulatory Compliance in Nigeria&apos;s Financial Sector
                 </h1>
                 <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                   <div className="flex flex-wrap items-center">
@@ -105,7 +105,7 @@ const BlogSidebarPage = () => {
                 </div>
                 <div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Nigeria's financial sector operates under a complex regulatory framework that requires businesses to maintain strict compliance with multiple regulatory bodies. Understanding these requirements is crucial for sustainable operations and risk mitigation.
+                    Nigeria&apos;s financial sector operates under a complex regulatory framework that requires businesses to maintain strict compliance with multiple regulatory bodies. Understanding these requirements is crucial for sustainable operations and risk mitigation.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded-sm">
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
@@ -155,7 +155,7 @@ const BlogSidebarPage = () => {
                   </ul>
                   <div className="bg-primary/10 relative z-10 mb-10 overflow-hidden rounded-md p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-body-color text-center text-base font-medium italic">
-                      &ldquo;Regulatory compliance is not just about meeting minimum requirements—it's about building sustainable business practices that protect stakeholders and enable long-term growth in Nigeria's evolving financial landscape.&rdquo; - MyRisk.ng Compliance Framework
+                      &ldquo;Regulatory compliance is not just about meeting minimum requirements—it&apos;s about building sustainable business practices that protect stakeholders and enable long-term growth in Nigeria&apos;s evolving financial landscape.&rdquo; - MyRisk.ng Compliance Framework
                     </p>
                     <span className="absolute top-0 left-0 z-[-1]">
                       <svg
