@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
 layer(base);
+/* Note: You'll need to add Tiempos Headline and Futura PT through Adobe Fonts or another service */
+/* For now, using system fonts with similar characteristics */
 
 @import 'tailwindcss';
 
@@ -18,10 +20,12 @@ layer(base);
   --color-transparent: transparent;
   --color-white: #ffffff;
   --color-black: #121723;
-  --color-dark: #1d2430;
-  --color-primary: #4a6cf7;
+  --color-dark: #232429;
+  --color-primary: #4bbdcd;
+  --color-secondary: #7ab246;
+  --color-sky-blue: #7ec1ca;
   --color-yellow: #fbb040;
-  --color-bg-color-dark: #171c28;
+  --color-bg-color-dark: #232429;
 
   --color-body-color: #788293;
   --color-body-color-dark: #959cb1;
@@ -42,6 +46,42 @@ layer(base);
   --color-gray-950: #030712;
   --color-gray-dark: #1e232e;
   --color-gray-light: #f0f2f9;
+
+  /* shadcn/ui CSS variables */
+  --color-background: #ffffff;
+  --color-foreground: #121723;
+  --color-muted: #f0f2f9;
+  --color-muted-foreground: #788293;
+  --color-card: #ffffff;
+  --color-card-foreground: #121723;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #121723;
+  --color-border: #e3e8ef;
+  --color-input: #e3e8ef;
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: #121723;
+  --color-accent: #f0f2f9;
+  --color-accent-foreground: #121723;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-ring: #4bbdcd;
+
+  /* Dark mode variables */
+  --color-dark-background: #232429;
+  --color-dark-foreground: #ffffff;
+  --color-dark-muted: #1e232e;
+  --color-dark-muted-foreground: #959cb1;
+  --color-dark-card: #232429;
+  --color-dark-card-foreground: #ffffff;
+  --color-dark-popover: #232429;
+  --color-dark-popover-foreground: #ffffff;
+  --color-dark-border: #353943;
+  --color-dark-input: #353943;
+  --color-dark-accent: #1e232e;
+  --color-dark-accent-foreground: #ffffff;
+  --color-dark-destructive: #ef4444;
+  --color-dark-destructive-foreground: #ffffff;
+  --color-dark-ring: #4bbdcd;
 
   --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
   --shadow-one: 0px 2px 3px rgba(7, 7, 77, 0.05);
@@ -79,6 +119,25 @@ layer(base);
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
+  }
+
+  /* Dark mode styles for shadcn components */
+  .dark {
+    --color-background: var(--color-dark-background);
+    --color-foreground: var(--color-dark-foreground);
+    --color-muted: var(--color-dark-muted);
+    --color-muted-foreground: var(--color-dark-muted-foreground);
+    --color-card: var(--color-dark-card);
+    --color-card-foreground: var(--color-dark-card-foreground);
+    --color-popover: var(--color-dark-popover);
+    --color-popover-foreground: var(--color-dark-popover-foreground);
+    --color-border: var(--color-dark-border);
+    --color-input: var(--color-dark-input);
+    --color-accent: var(--color-dark-accent);
+    --color-accent-foreground: var(--color-dark-accent-foreground);
+    --color-destructive: var(--color-dark-destructive);
+    --color-destructive-foreground: var(--color-dark-destructive-foreground);
+    --color-ring: var(--color-dark-ring);
   }
 }
 
@@ -124,7 +183,41 @@ layer(base);
 
 @layer base {
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Futura PT", "Avenir Next", "Helvetica Neue", system-ui, sans-serif;
+  }
+  
+  /* Tiempos Headline 400 - For special sections and very large headers */
+  .hero-title,
+  .section-hero,
+  .display-heading {
+    font-family: "Tiempos Headline", "Times New Roman", Georgia, serif;
+    font-weight: 400;
+  }
+  
+  /* Futura PT 400 - For container headers and varying header sizes */
+  h1, h2, h3, h4, h5, h6,
+  .container-header,
+  .section-header {
+    font-family: "Futura PT", "Avenir Next", "Helvetica Neue", system-ui, sans-serif;
+    font-weight: 400;
+  }
+  
+  /* Font size variations for Futura PT headers */
+  .container-header {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  
+  .section-header {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  /* Large display text for Tiempos Headline */
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+  
+  .display-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
 }
 

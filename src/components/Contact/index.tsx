@@ -12,10 +12,10 @@ const Contact = () => {
               "
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Open a Ticket
+                Get Your Risk Assessment
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Our support team will get back to you ASAP via email.
+                Connect with our risk management experts to discuss your business needs. We'll provide tailored solutions for your Nigerian business.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">
@@ -25,11 +25,11 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Name
+                        Full Name
                       </label>
                       <input
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="Enter your full name"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -40,13 +40,53 @@ const Contact = () => {
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Email
+                        Business Email
                       </label>
                       <input
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="Enter your business email"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
+                    </div>
+                  </div>
+                  <div className="w-full px-4 md:w-1/2">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="company"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your company name"
+                        className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full px-4 md:w-1/2">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="industry"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                        Industry Sector
+                      </label>
+                      <select
+                        className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      >
+                        <option value="">Select your industry</option>
+                        <option value="financial-services">Financial Services</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="oil-gas">Oil & Gas</option>
+                        <option value="telecommunications">Telecommunications</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="retail">Retail & E-commerce</option>
+                        <option value="construction">Construction & Real Estate</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="technology">Technology</option>
+                        <option value="other">Other</option>
+                      </select>
                     </div>
                   </div>
                   <div className="w-full px-4">
@@ -55,19 +95,19 @@ const Contact = () => {
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Message
+                        Risk Management Requirements
                       </label>
                       <textarea
                         name="message"
                         rows={5}
-                        placeholder="Enter your Message"
+                        placeholder="Describe your risk management needs, compliance requirements, or specific challenges your business is facing..."
                         className="border-stroke w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button className="rounded-xs bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                      Request Assessment
                     </button>
                   </div>
                 </div>

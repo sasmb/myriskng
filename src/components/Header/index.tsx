@@ -58,15 +58,15 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
+                  alt="MyRisk"
+                  width={120}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
                   src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
+                  alt="MyRisk"
+                  width={120}
                   height={30}
                   className="hidden w-full dark:block"
                 />
@@ -163,13 +163,13 @@ const Header = () => {
                   href="/signin"
                   className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
                 >
-                  Sign In
+                  Client Portal
                 </Link>
                 <Link
-                  href="/signup"
+                  href="/contact"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Sign Up
+                  Get Assessment
                 </Link>
                 <div>
                   <ThemeToggler />

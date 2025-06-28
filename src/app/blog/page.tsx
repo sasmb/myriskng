@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Risk Management Insights - MyRisk.ng Blog",
+  description: "Expert insights, tips, and strategies for effective risk management in Nigerian businesses",
   // other metadata
 };
 
@@ -14,8 +14,8 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Risk Management Insights"
+        description="Expert insights, strategies, and best practices for effective risk management in Nigerian businesses. Stay informed with the latest trends in compliance, business continuity, and strategic risk planning."
       />
 
       <section className="pt-[120px] pb-[120px]">

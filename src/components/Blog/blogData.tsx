@@ -3,44 +3,44 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Essential Risk Management Strategies for Nigerian Businesses",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Discover how Nigerian businesses can implement comprehensive risk management frameworks to protect against operational, financial, and regulatory challenges in today's dynamic market environment.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "Adebayo Okonkwo",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Senior Risk Analyst",
     },
-    tags: ["creative"],
+    tags: ["risk-management"],
     publishDate: "2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Navigating Regulatory Compliance in Nigeria's Financial Sector",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "A comprehensive guide to understanding and implementing compliance frameworks that align with CBN regulations, SEC requirements, and other regulatory bodies in Nigeria.",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "Funmi Adebisi",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "Compliance Specialist",
     },
-    tags: ["computer"],
+    tags: ["compliance"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Building Business Continuity Plans for SMEs in Nigeria",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Learn how small and medium enterprises can develop robust business continuity strategies to withstand disruptions from power outages, security challenges, and economic volatility.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Chukwudi Okoro",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Business Continuity Expert",
     },
-    tags: ["design"],
+    tags: ["business-continuity"],
     publishDate: "2025",
   },
 ];

@@ -13,27 +13,28 @@ const Footer = () => {
                 <Link href="/" className="mb-8 inline-block">
                   <Image
                     src="/images/logo/logo-2.svg"
-                    alt="logo"
+                    alt="MyRisk"
                     className="w-full dark:hidden"
-                    width={140}
+                    width={120}
                     height={30}
                   />
                   <Image
                     src="/images/logo/logo.svg"
-                    alt="logo"
+                    alt="MyRisk"
                     className="hidden w-full dark:block"
-                    width={140}
+                    width={120}
                     height={30}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  MyRisk.ng provides comprehensive risk management solutions 
+                  for businesses across Nigeria. Protect your business with our 
+                  expert guidance and strategic planning.
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="/"
-                    aria-label="social-link"
+                    href="https://facebook.com/myrisk.ng"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -52,8 +53,8 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
+                    href="https://twitter.com/myrisk_ng"
+                    aria-label="Twitter/X"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -74,8 +75,8 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
+                    href="https://youtube.com/@myrisk.ng"
+                    aria-label="YouTube"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -90,8 +91,8 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
+                    href="https://linkedin.com/company/myrisk-ng"
+                    aria-label="LinkedIn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -112,7 +113,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                  Services
                 </h2>
                 <ul>
                   <li>
@@ -120,15 +121,15 @@ const Footer = () => {
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Risk Insights
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Risk Assessment
                     </Link>
                   </li>
                   <li>
@@ -136,7 +137,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      About Us
                     </Link>
                   </li>
                 </ul>
@@ -215,24 +216,7 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
+              © 2025 MyRisk.ng. All rights reserved. Professional risk management solutions for Nigerian businesses.
             </p>
           </div>
         </div>
@@ -259,7 +243,7 @@ const Footer = () => {
                 cx="49.5"
                 cy="49.5"
                 r="49.5"
-                fill="#4A6CF7"
+                fill="#4bbdcd"
               />
             </mask>
             <g mask="url(#mask0_94:899)">
@@ -365,8 +349,8 @@ const Footer = () => {
                 y2="59.8878"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_94:889"
@@ -376,8 +360,8 @@ const Footer = () => {
                 y2="20.668"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_94:889"
@@ -387,8 +371,8 @@ const Footer = () => {
                 y2="25.1062"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_94:889"
@@ -398,8 +382,8 @@ const Footer = () => {
                 y2="80.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_94:889"
@@ -409,8 +393,8 @@ const Footer = () => {
                 y2="58.2156"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_94:889"
@@ -420,8 +404,8 @@ const Footer = () => {
                 y2="41.6598"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0.51" />
               </linearGradient>
             </defs>
           </svg>

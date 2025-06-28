@@ -1,52 +1,20 @@
-import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
-
-const testimonialData: Testimonial[] = [
-  {
-    id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
-  },
-  {
-    id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
-  },
-  {
-    id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
-  },
-];
+import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 
 const Testimonials = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="What Our Clients Say"
+          paragraph="Hear from Nigerian business leaders who trust MyRisk.ng to protect and grow their companies. Real testimonials from real businesses we've helped secure."
           center
         />
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
-          ))}
-        </div>
+      </div>
+      
+      {/* Modern Stagger Testimonials */}
+      <div className="mt-16">
+        <StaggerTestimonials />
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
@@ -85,8 +53,8 @@ const Testimonials = () => {
               y2="459.865"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              <stop stopColor="#4bbdcd" />
+              <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_83:2"
@@ -96,8 +64,8 @@ const Testimonials = () => {
               y2="675.565"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              <stop stopColor="#4bbdcd" />
+              <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -137,8 +105,8 @@ const Testimonials = () => {
               y2="8.15715"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" />
+              <stop stopColor="#4bbdcd" stopOpacity="0" />
+              <stop offset="1" stopColor="#4bbdcd" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_72:302"
@@ -148,8 +116,8 @@ const Testimonials = () => {
               y2="-2.84285"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" />
+              <stop stopColor="#4bbdcd" stopOpacity="0" />
+              <stop offset="1" stopColor="#4bbdcd" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_72:302"
@@ -159,8 +127,8 @@ const Testimonials = () => {
               y2="19.1572"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" />
+              <stop stopColor="#4bbdcd" stopOpacity="0" />
+              <stop offset="1" stopColor="#4bbdcd" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_72:302"
@@ -170,8 +138,8 @@ const Testimonials = () => {
               y2="31.1572"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" />
+              <stop stopColor="#4bbdcd" stopOpacity="0" />
+              <stop offset="1" stopColor="#4bbdcd" />
             </linearGradient>
           </defs>
         </svg>

@@ -7,8 +7,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Risk Management Insights - MyRisk.ng Blog",
+  description: "Expert analysis and practical insights on risk management strategies for Nigerian businesses",
   // other metadata
 };
 
@@ -21,8 +21,7 @@ const BlogSidebarPage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h1 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
-                  10 amazing sites to download stock photos & digital assets for
-                  free
+                  Navigating Regulatory Compliance in Nigeria's Financial Sector
                 </h1>
                 <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                   <div className="flex flex-wrap items-center">
@@ -38,7 +37,7 @@ const BlogSidebarPage = () => {
                       </div>
                       <div className="w-full">
                         <span className="text-body-color mb-1 text-base font-medium">
-                          By <span> Musharof Chy</span>
+                          By <span>Funmi Adebisi</span>
                         </span>
                       </div>
                     </div>
@@ -62,7 +61,7 @@ const BlogSidebarPage = () => {
                             <path d="M13.2637 3.3697H7.64754V2.58105C8.19721 2.43765 8.62738 1.91189 8.62738 1.31442C8.62738 0.597464 8.02992 0 7.28906 0C6.54821 0 5.95074 0.597464 5.95074 1.31442C5.95074 1.91189 6.35702 2.41376 6.93058 2.58105V3.3697H1.31442C0.597464 3.3697 0 3.96716 0 4.68412V13.2637C0 13.9807 0.597464 14.5781 1.31442 14.5781H13.2637C13.9807 14.5781 14.5781 13.9807 14.5781 13.2637V4.68412C14.5781 3.96716 13.9807 3.3697 13.2637 3.3697ZM6.6677 1.31442C6.6677 0.979841 6.93058 0.716957 7.28906 0.716957C7.62364 0.716957 7.91042 0.979841 7.91042 1.31442C7.91042 1.649 7.64754 1.91189 7.28906 1.91189C6.95448 1.91189 6.6677 1.6251 6.6677 1.31442ZM1.31442 4.08665H13.2637C13.5983 4.08665 13.8612 4.34954 13.8612 4.68412V6.45261H0.716957V4.68412C0.716957 4.34954 0.979841 4.08665 1.31442 4.08665ZM13.2637 13.8612H1.31442C0.979841 13.8612 0.716957 13.5983 0.716957 13.2637V7.16957H13.8612V13.2637C13.8612 13.5983 13.5983 13.8612 13.2637 13.8612Z" />
                           </svg>
                         </span>
-                        12 Jan 2024
+                        18 Jan 2025
                       </p>
                       <p className="text-body-color mr-5 flex items-center text-base font-medium">
                         <span className="mr-3">
@@ -77,7 +76,7 @@ const BlogSidebarPage = () => {
                             <path d="M11.0529 6.55322H4.69668C4.41543 6.55322 4.19043 6.77822 4.19043 7.05947C4.19043 7.34072 4.41543 7.56572 4.69668 7.56572H11.0811C11.3623 7.56572 11.5873 7.34072 11.5873 7.05947C11.5873 6.77822 11.3342 6.55322 11.0529 6.55322Z" />
                           </svg>
                         </span>
-                        50
+                        42
                       </p>
                       <p className="text-body-color flex items-center text-base font-medium">
                         <span className="mr-3">
@@ -91,86 +90,72 @@ const BlogSidebarPage = () => {
                             <path d="M19.7559 5.625C17.6934 2.375 14.1309 0.4375 10.2559 0.4375C6.38086 0.4375 2.81836 2.375 0.755859 5.625C0.630859 5.84375 0.630859 6.125 0.755859 6.34375C2.81836 9.59375 6.38086 11.5312 10.2559 11.5312C14.1309 11.5312 17.6934 9.59375 19.7559 6.34375C19.9121 6.125 19.9121 5.84375 19.7559 5.625ZM10.2559 10.4375C6.84961 10.4375 3.69336 8.78125 1.81836 5.96875C3.69336 3.1875 6.84961 1.53125 10.2559 1.53125C13.6621 1.53125 16.8184 3.1875 18.6934 5.96875C16.8184 8.78125 13.6621 10.4375 10.2559 10.4375Z" />
                           </svg>
                         </span>
-                        35
+                        128
                       </p>
                     </div>
                   </div>
                   <div className="mb-5">
                     <a
-                      href="#0"
+                      href="/blog"
                       className="bg-primary inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white"
                     >
-                      Design
+                      Compliance
                     </a>
                   </div>
                 </div>
                 <div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Nigeria's financial sector operates under a complex regulatory framework that requires businesses to maintain strict compliance with multiple regulatory bodies. Understanding these requirements is crucial for sustainable operations and risk mitigation.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded-sm">
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
                         src="/images/blog/blog-details-01.jpg"
-                        alt="image"
+                        alt="Nigerian financial regulatory compliance"
                         fill
                         className="h-full w-full object-cover object-center"
                       />
                     </div>
                   </div>
                   <p className="text-body-color mb-8 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis enim lobortis scelerisque fermentum. Neque
-                    sodales ut etiam sit amet. Ligula ullamcorper
+                    The Central Bank of Nigeria (CBN), Securities and Exchange Commission (SEC), and Federal Inland Revenue Service (FIRS) each maintain distinct regulatory requirements that financial institutions must navigate. A comprehensive compliance strategy ensures
                     <strong className="text-primary dark:text-white">
                       {" "}
-                      malesuada{" "}
+                      regulatory alignment{" "}
                     </strong>
-                    proin libero nunc consequat interdum varius. Quam
-                    pellentesque nec nam aliquam sem et tortor consequat.
-                    Pellentesque adipiscing commodo elit at imperdiet.
+                    while maintaining operational efficiency and minimizing regulatory risk exposure across all business functions.
                   </p>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Semper auctor neque vitae tempus quam pellentesque nec.
+                    Effective compliance management requires continuous monitoring and proactive risk assessment.
                     <span className="text-primary underline dark:text-white">
                       {" "}
-                      Amet dictum sit amet justo{" "}
+                      Regulatory reporting frameworks{" "}
                     </span>
-                    donec enim diam. Varius sit amet mattis vulputate enim nulla
-                    aliquet porttitor. Odio pellentesque diam volutpat commodo
-                    sed.
+                    must be implemented to ensure timely submission of required documentation while maintaining data accuracy and completeness across all regulatory touchpoints.
                   </p>
                   <h3 className="font-xl mb-10 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white">
-                    Digital marketplace for Ui/Ux designers.
+                    Key Regulatory Bodies and Requirements
                   </h3>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    consectetur adipiscing elit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    mattis vulputate cupidatat.
+                    Nigerian financial institutions must maintain compliance with multiple regulatory authorities, each with specific requirements and reporting obligations that must be integrated into comprehensive risk management frameworks.
                   </p>
                   <ul className="text-body-color mb-10 list-inside list-disc">
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Consectetur adipiscing elit in voluptate velit.
+                      Central Bank of Nigeria (CBN) prudential guidelines and capital adequacy requirements
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Mattis vulputate cupidatat.
+                      Securities and Exchange Commission (SEC) market conduct and disclosure obligations
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Vulputate enim nulla aliquet porttitor odio pellentesque
+                      Federal Inland Revenue Service (FIRS) tax compliance and reporting requirements
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Ligula ullamcorper malesuada proin
+                      Nigerian Deposit Insurance Corporation (NDIC) deposit protection and resolution planning
                     </li>
                   </ul>
                   <div className="bg-primary/10 relative z-10 mb-10 overflow-hidden rounded-md p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-body-color text-center text-base font-medium italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod incididunt utionals labore et dolore magna
-                      aliqua. Quis lobortis scelerisque fermentum, The Neque ut
-                      etiam sit amet.
+                      &ldquo;Regulatory compliance is not just about meeting minimum requirements—it's about building sustainable business practices that protect stakeholders and enable long-term growth in Nigeria's evolving financial landscape.&rdquo; - MyRisk.ng Compliance Framework
                     </p>
                     <span className="absolute top-0 left-0 z-[-1]">
                       <svg
@@ -237,7 +222,7 @@ const BlogSidebarPage = () => {
                           cx="37.5"
                           cy="37.5"
                           r="37.5"
-                          fill="#4A6CF7"
+                          fill="#4bbdcd"
                         />
                         <mask
                           id="mask0_111:596"
@@ -253,7 +238,7 @@ const BlogSidebarPage = () => {
                             cx="37.5"
                             cy="37.5"
                             r="37.5"
-                            fill="#4A6CF7"
+                            fill="#4bbdcd"
                           />
                         </mask>
                         <g mask="url(#mask0_111:596)">
@@ -314,9 +299,7 @@ const BlogSidebarPage = () => {
                     </span>
                   </div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    consectetur adipiscing elit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    mattis vulputate cupidatat.
+                    By implementing comprehensive compliance management systems, Nigerian financial institutions can ensure regulatory adherence while building operational resilience that supports sustainable business growth and stakeholder confidence.
                   </p>
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
@@ -324,9 +307,9 @@ const BlogSidebarPage = () => {
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Info" />
+                        <TagButton text="compliance" />
+                        <TagButton text="risk-management" />
+                        <TagButton text="regulatory" />
                       </div>
                     </div>
                     <div className="mb-5">
@@ -346,7 +329,7 @@ const BlogSidebarPage = () => {
                 <div className="flex items-center justify-between">
                   <input
                     type="text"
-                    placeholder="Search here..."
+                    placeholder="Search risk insights..."
                     className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color focus:border-primary dark:focus:border-primary mr-4 w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                   />
                   <button
@@ -375,73 +358,73 @@ const BlogSidebarPage = () => {
                 <ul className="p-8">
                   <li className="border-body-color/10 mb-6 border-b pb-6 dark:border-white/10">
                     <RelatedPost
-                      title="Best way to boost your online sales."
+                      title="Essential Risk Management Strategies for Nigerian Businesses"
                       image="/images/blog/post-01.jpg"
-                      slug="#"
-                      date="12 Feb 2025"
+                      slug="/blog-details"
+                      date="15 Jan 2025"
                     />
                   </li>
                   <li className="border-body-color/10 mb-6 border-b pb-6 dark:border-white/10">
                     <RelatedPost
-                      title="50 Best web design tips & tricks that will help you."
+                      title="Building Business Continuity Plans for SMEs in Nigeria"
                       image="/images/blog/post-02.jpg"
-                      slug="#"
-                      date="15 Feb, 2024"
+                      slug="/blog"
+                      date="20 Jan 2025"
                     />
                   </li>
                   <li>
                     <RelatedPost
-                      title="The 8 best landing page builders, reviewed"
+                      title="Cybersecurity Risk Assessment for Nigerian Financial Institutions"
                       image="/images/blog/post-03.jpg"
-                      slug="#"
-                      date="05 Jun, 2024"
+                      slug="/blog"
+                      date="22 Jan 2025"
                     />
                   </li>
                 </ul>
               </div>
               <div className="shadow-three dark:bg-gray-dark mb-10 rounded-xs bg-white dark:shadow-none">
                 <h3 className="border-body-color/10 border-b px-8 py-4 text-lg font-semibold text-black dark:border-white/10 dark:text-white">
-                  Popular Category
+                  Popular Categories
                 </h3>
                 <ul className="px-8 py-6">
                   <li>
                     <a
-                      href="#0"
+                      href="/blog"
                       className="text-body-color hover:text-primary mb-3 inline-block text-base font-medium"
                     >
-                      Tailwind Templates
+                      Risk Management
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="/blog"
                       className="text-body-color hover:text-primary mb-3 inline-block text-base font-medium"
                     >
-                      Landing page
+                      Regulatory Compliance
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="/blog"
                       className="text-body-color hover:text-primary mb-3 inline-block text-base font-medium"
                     >
-                      Startup
+                      Business Continuity
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="/blog"
                       className="text-body-color hover:text-primary mb-3 inline-block text-base font-medium"
                     >
-                      Business
+                      Financial Risk
                     </a>
                   </li>
                   <li>
                     <a
-                      href="#0"
+                      href="/blog"
                       className="text-body-color hover:text-primary mb-3 inline-block text-base font-medium"
                     >
-                      Multipurpose
+                      Operational Risk
                     </a>
                   </li>
                 </ul>
@@ -451,11 +434,11 @@ const BlogSidebarPage = () => {
                   Popular Tags
                 </h3>
                 <div className="flex flex-wrap px-8 py-6">
-                  <TagButton text="Themes" />
-                  <TagButton text="UI Kit" />
-                  <TagButton text="Tailwind" />
-                  <TagButton text="Startup" />
-                  <TagButton text="Business" />
+                  <TagButton text="risk-management" />
+                  <TagButton text="compliance" />
+                  <TagButton text="regulatory" />
+                  <TagButton text="business-continuity" />
+                  <TagButton text="financial-risk" />
                 </div>
               </div>
 

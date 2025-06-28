@@ -1,9 +1,14 @@
 const SharePost = () => {
+  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const shareTitle = "Risk Management Insights from MyRisk.ng";
+  
   return (
     <>
       <a
-        href="#0"
-        aria-label="social-share"
+        href={`https://linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on LinkedIn"
         className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-xs bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary sm:ml-3"
       >
         <svg
@@ -16,8 +21,10 @@ const SharePost = () => {
         </svg>
       </a>
       <a
-        href="#0"
-        aria-label="social-share"
+        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}&via=myrisk_ng`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Twitter/X"
         className="mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-xs bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary"
       >
         <svg
@@ -36,8 +43,10 @@ const SharePost = () => {
         </svg>
       </a>
       <a
-        href="#0"
-        aria-label="social-share"
+        href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Facebook"
         className="mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-xs bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary"
       >
         <svg

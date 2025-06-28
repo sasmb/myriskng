@@ -1,63 +1,36 @@
-import Image from "next/image";
+import { Feature73 } from "@/components/ui/feature-73";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-25/24 max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Feature73
+      heading="Expert Risk Management Solutions"
+      description="MyRisk.ng provides comprehensive risk management services designed specifically for Nigerian businesses. Our proven methodologies help organizations identify, assess, and mitigate risks effectively."
+      linkUrl="/contact"
+      linkText="Schedule Consultation"
+      features={[
+        {
+          id: "comprehensive-assessment",
+          title: "Comprehensive Risk Assessment",
+          description:
+            "Our expert team conducts thorough risk assessments covering operational, financial, regulatory, and strategic risks. We provide detailed analysis with actionable recommendations tailored to your industry and business size.",
+          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+        },
+        {
+          id: "compliance-management", 
+          title: "Compliance Management",
+          description:
+            "Stay ahead of regulatory requirements with our comprehensive compliance monitoring. We ensure your business meets CBN, SEC, FIRS, and other regulatory standards.",
+          image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&h=600&fit=crop",
+        },
+        {
+          id: "business-continuity",
+          title: "Business Continuity & Crisis Management",
+          description:
+            "Develop robust business continuity plans and crisis management strategies. We help you prepare for and respond to disruptions effectively.",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+        },
+      ]}
+    />
   );
 };
 

@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Comprehensive Risk Management Solutions"
+          paragraph="Choose the right risk management package for your Nigerian business. Our tailored solutions provide comprehensive protection and compliance support across all industry sectors."
           center
           width="665px"
         />
@@ -59,43 +59,43 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            packageName="Essential"
+            price={isMonthly ? "150,000" : "1,620,000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Perfect for small to medium enterprises seeking foundational risk management and compliance support."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Basic Risk Assessment" status="active" />
+            <OfferList text="Compliance Monitoring" status="active" />
+            <OfferList text="Monthly Risk Reports" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Emergency Response Planning" status="inactive" />
+            <OfferList text="24/7 Risk Hotline" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            packageName="Professional"
+            price={isMonthly ? "350,000" : "3,780,000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Comprehensive risk management for growing businesses with complex operational requirements."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Comprehensive Risk Assessment" status="active" />
+            <OfferList text="Advanced Compliance Management" status="active" />
+            <OfferList text="Business Continuity Planning" status="active" />
+            <OfferList text="Priority Support" status="active" />
+            <OfferList text="Quarterly Strategy Reviews" status="active" />
+            <OfferList text="24/7 Risk Hotline" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            packageName="Enterprise"
+            price={isMonthly ? "750,000" : "8,100,000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Complete risk management solution for large enterprises requiring maximum protection and compliance."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Enterprise Risk Assessment" status="active" />
+            <OfferList text="Full Regulatory Compliance" status="active" />
+            <OfferList text="Crisis Management Support" status="active" />
+            <OfferList text="Dedicated Risk Consultant" status="active" />
+            <OfferList text="Monthly Strategy Sessions" status="active" />
+            <OfferList text="24/7 Emergency Response" status="active" />
           </PricingBox>
         </div>
       </div>
@@ -137,8 +137,8 @@ const Pricing = () => {
               y2="1131.65"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              <stop stopColor="#4bbdcd" />
+              <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_93:235"
@@ -148,8 +148,8 @@ const Pricing = () => {
               y2="915.952"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              <stop stopColor="#4bbdcd" />
+              <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

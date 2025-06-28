@@ -12,8 +12,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "MyRisk.ng - Risk Management Solutions",
+  description: "Professional risk management platform for businesses in Nigeria",
   // other metadata
 };
 
@@ -28,7 +28,6 @@ export default function Home() {
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />
-      <Pricing />
       <Blog />
       <Contact />
     </>

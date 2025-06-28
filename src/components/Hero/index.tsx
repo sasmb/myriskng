@@ -1,6 +1,77 @@
+"use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 const Hero = () => {
+  const [currentText, setCurrentText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  
+  const phrases = [
+    "Meet GOALs",
+    "Manage Uncertainty", 
+    "Document Processes",
+    "Save Time",
+    "Grow Sustainably",
+    "Manage Reputation"
+  ];
+
+  const myRiskTeam = [
+    {
+      id: 1,
+      name: "Adebayo Ogundimu",
+      designation: "Senior Risk Analyst",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      id: 2,
+      name: "Funmi Adebisi",
+      designation: "Compliance Specialist", 
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      id: 3,
+      name: "Chukwudi Okoro",
+      designation: "Business Continuity Expert",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      id: 4,
+      name: "Kemi Adeyemi",
+      designation: "Risk Management Director",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+    },
+    {
+      id: 5,
+      name: "Samuel Ajayi",
+      designation: "Operations Consultant",
+      image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=150&h=150&fit=crop&crop=face",
+    },
+  ];
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const current = phrases[currentIndex];
+      
+      if (isDeleting) {
+        setCurrentText(current.substring(0, currentText.length - 1));
+        
+        if (currentText === '') {
+          setIsDeleting(false);
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        }
+      } else {
+        setCurrentText(current.substring(0, currentText.length + 1));
+        
+        if (currentText === current) {
+          setTimeout(() => setIsDeleting(true), 2000); // Pause before deleting
+        }
+      }
+    }, isDeleting ? 100 : 150); // Faster when deleting
+
+    return () => clearTimeout(timeout);
+  }, [currentText, currentIndex, isDeleting, phrases]);
   return (
     <>
       <section
@@ -11,28 +82,67 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+                                <h1 className="hero-title mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Our Goal - Help Businesses<br />{" "}
+                  <span className="text-primary">
+                    {currentText}
+                    <span className="animate-pulse">|</span>
+                  </span>
                 </h1>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  MyRisk.ng provides comprehensive risk assessment, management, and 
+                  mitigation solutions tailored for businesses across Nigeria. 
+                  Protect your business with our expert risk analysis and strategic guidance.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="/contact"
                     className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    🛡️ Get Assessment
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="/about"
                     className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    Learn More
                   </Link>
+                </div>
+                
+                {/* Social Proof Section */}
+                <div className="mt-12 flex flex-col items-center justify-center space-y-4">
+                  {/* Animated Customer Avatars */}
+                  <AnimatedTooltip 
+                    items={myRiskTeam} 
+                    className="justify-center"
+                  />
+                  
+                  {/* Rating and Reviews */}
+                  <div className="flex flex-col items-center space-y-2">
+                    {/* Stars */}
+                    <div className="flex items-center space-x-1">
+                      <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                    
+                    {/* Review Text */}
+                    <p className="text-sm text-body-color dark:text-body-color-dark">
+                      <span className="font-semibold">Expert Team</span> • <span className="font-semibold">150+ businesses</span> protected
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,8 +214,8 @@ const Hero = () => {
                 y2="288"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <radialGradient
                 id="paint1_radial_25:217"
@@ -115,8 +225,8 @@ const Hero = () => {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
               >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+                <stop offset="0.145833" stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0.08" />
               </radialGradient>
               <radialGradient
                 id="paint2_radial_25:217"
@@ -126,8 +236,8 @@ const Hero = () => {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
               >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+                <stop offset="0.145833" stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0.08" />
               </radialGradient>
               <linearGradient
                 id="paint3_linear_25:217"
@@ -137,8 +247,8 @@ const Hero = () => {
                 y2="351.421"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_25:217"
@@ -148,7 +258,7 @@ const Hero = () => {
                 y2="448.882"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" />
                 <stop offset="1" stopColor="white" stopOpacity="0" />
               </linearGradient>
               <linearGradient
@@ -159,7 +269,7 @@ const Hero = () => {
                 y2="470"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" />
                 <stop offset="1" stopColor="white" stopOpacity="0" />
               </linearGradient>
               <linearGradient
@@ -170,8 +280,8 @@ const Hero = () => {
                 y2="338.63"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -218,8 +328,8 @@ const Hero = () => {
                 y2="212.24"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_25:218"
@@ -229,8 +339,8 @@ const Hero = () => {
                 y2="212.24"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_25:218"
@@ -240,8 +350,8 @@ const Hero = () => {
                 y2="212.24"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_25:218"
@@ -251,8 +361,8 @@ const Hero = () => {
                 y2="210.214"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4bbdcd" stopOpacity="0" />
+                <stop offset="1" stopColor="#4bbdcd" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_25:218"
@@ -262,8 +372,8 @@ const Hero = () => {
                 y2="99.5816"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4bbdcd" />
+                <stop offset="1" stopColor="#4bbdcd" stopOpacity="0" />
               </linearGradient>
               <radialGradient
                 id="paint5_radial_25:218"

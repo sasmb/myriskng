@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#232429" rx="4"/>
+  
+  <!-- Main geometric element in primary brand color -->
+  <path d="M4 4C13.9411 4 22 12.0589 22 22H8C6.89543 22 6 21.1046 6 20V4Z" fill="#4bbdcd"/>
+  
+  <!-- Secondary element with transparency -->
+  <path d="M8 22C8 12.0589 16.0589 4 26 4V18C26 19.1046 25.1046 20 24 20H8Z" fill="#7ab246" opacity="0.7"/>
+  
+  <!-- Small accent element -->
+  <circle cx="24" cy="8" r="3" fill="#7ec1ca" opacity="0.6"/>
+</svg> 
