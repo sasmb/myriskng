@@ -1,74 +1,75 @@
-# Startup - Free Next.js Startup Website Template
+# MyRisk.ng - Risk Management Platform for Nigerian Businesses
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+MyRisk.ng is a comprehensive risk management platform designed specifically for businesses operating in Nigeria. We provide expert risk assessment, strategic planning, and mitigation solutions to help Nigerian businesses navigate uncertainties and build resilient operations.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## 🛡️ About MyRisk.ng
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+MyRisk.ng serves as Nigeria's leading risk management consultancy, dedicated to protecting and empowering businesses through comprehensive risk assessment, strategic planning, and expert guidance. We help Nigerian businesses across all sectors navigate complex challenges and build sustainable, resilient operations.
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## ✨ Our Core Services
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+- **🔍 Risk Assessment** - Comprehensive risk identification and analysis tailored to your business operations
+- **📋 Strategic Planning** - Develop robust risk mitigation strategies aligned with your business goals
+- **⚖️ Compliance Management** - Stay ahead of regulatory requirements with our comprehensive compliance framework
+- **🚨 Crisis Management** - Rapid response and effective crisis management protocols
+- **🔄 Business Continuity** - Ensure seamless operations during disruptions with tailored continuity plans
+- **👨‍💼 Expert Consultation** - Access to seasoned risk management professionals with deep industry knowledge
 
+## 🎯 Why Choose MyRisk.ng?
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+- **🇳🇬 Nigerian Focus** - Deep understanding of the Nigerian business environment and regulatory landscape
+- **👥 Expert Team** - Seasoned risk management professionals with proven track records
+- **🏢 Industry Expertise** - Experience across multiple sectors including finance, manufacturing, healthcare, and technology
+- **📊 Comprehensive Solutions** - End-to-end risk management from assessment to implementation
+- **⚡ Rapid Response** - Quick deployment of crisis management protocols when needed
+- **📈 Business Growth** - Risk strategies that enable sustainable business growth
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+## 🚀 Our Approach
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+1. **Assessment** - Thorough evaluation of your current risk landscape
+2. **Strategy** - Development of customized risk mitigation plans
+3. **Implementation** - Guided execution of risk management protocols
+4. **Monitoring** - Continuous monitoring and adjustment of risk strategies
+5. **Support** - Ongoing support and consultation as your business evolves
 
+## 🏢 Industries We Serve
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+- **Financial Services** - Banks, fintech, insurance companies
+- **Manufacturing** - Production facilities, supply chain management
+- **Healthcare** - Hospitals, clinics, pharmaceutical companies
+- **Technology** - Software companies, IT services, startups
+- **Oil & Gas** - Exploration, production, and distribution companies
+- **Agriculture** - Farming operations, agribusiness, food processing
+- **Real Estate** - Property development, construction, facilities management
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+## 📞 Get Started
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+Ready to secure your business? Contact our risk management experts for a comprehensive assessment and tailored solutions.
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+**Email:** contact@myrisk.ng  
+**Phone:** +234 (0) 1 234 5678  
+**Website:** [www.myrisk.ng](https://myrisk.ng)
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+## 🛠️ Technology Stack
 
-### ⚡ Deploy Now
+This platform is built with:
+- **Next.js 15** - React framework for production
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Modern UI Components** - Responsive and accessible design
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+## 📄 License
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+© 2025 MyRisk.ng. All rights reserved.
 
+## 🤝 Connect With Us
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+Follow us for the latest insights on risk management and business resilience:
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+- **LinkedIn:** [MyRisk.ng](https://linkedin.com/company/myriskng)
+- **Twitter:** [@MyRiskNG](https://twitter.com/myriskng)
+- **Facebook:** [MyRisk.ng](https://facebook.com/myriskng)
 
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+---
 
-### Update Log
-
-**10 April 2025**
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
-
-**29 Jan 2025**
-- Upgraded to Next.js 15
+**Protecting Nigerian Businesses. Building Resilient Futures.**
